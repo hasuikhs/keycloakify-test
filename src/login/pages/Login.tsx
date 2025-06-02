@@ -9,6 +9,7 @@ export default function Login(props: PageProps<Extract<KcContext, { pageId: "log
 
     const [isLoginButtonDisabled, setIsLoginButtonDisabled] = useState(false);
 
+    console.log('account test')
     return (
         <form id="kc-form-login" onSubmit={() => setIsLoginButtonDisabled(true)} action={url.loginAction} method="post">
             {message !== undefined && (
